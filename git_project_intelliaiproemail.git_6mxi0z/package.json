@@ -1,0 +1,12 @@
+{
+  "name": "intelliaiproemail",
+  "version": "1.0.0",
+  "description": "IntelliAI Pro Email Project",
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^4.2.0"
+  }
+}

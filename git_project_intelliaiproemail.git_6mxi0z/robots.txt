@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://intelliaipro.com/sitemap.xml

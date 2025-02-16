@@ -1,0 +1,20 @@
+<header>
+  <h1>IntelliAI Pro</h1>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/index.html#services">Services</a>
+    <a href="/index.html#contact">Contact</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/faq.html">FAQ</a>
+    <a href="/about.html">About Us</a>
+    <a href="https://intellichatt.com" target="_blank">IntelliChatt</a>
+  </nav>
+</header>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('header nav');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>

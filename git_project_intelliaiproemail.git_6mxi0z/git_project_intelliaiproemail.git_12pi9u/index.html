@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Transform your business with AI-powered solutions. Custom landing pages, intelligent AI agents, web apps, API integrations, and mobile apps for Play Store & Apple Store.">
+    <meta name="keywords" content="AI, Business Solutions, Web Development, Mobile Apps, API Integration, AI Agents">
+    <meta name="author" content="IntelliAI Pro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://www.intelliai-pro.com/">
+    <meta property="og:title" content="IntelliAI Pro Series - AI-Powered Business Solutions">
+    <meta property="og:description" content="Transform your business with AI-powered solutions. Custom landing pages, intelligent AI agents, web apps, API integrations, and mobile apps for Play Store & Apple Store.">
+    <meta property="og:image" content="https://www.intelliai-pro.com/og-image.jpg">
+    <meta property="og:url" content="https://www.intelliai-pro.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="robots" content="index, follow">
+    <title>IntelliAI Pro Series - AI-Powered Business Solutions</title>
+    <style>
+        :root {
+            --brand-primary: #000000;
+            --brand-secondary: #1A1A1A;
+            --brand-accent: #C0C0C0;
+            --brand-light: #FFFFFF;
+            --highlight-color: #333333;
+            --red-highlight: #FF0000;
+            --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            color: var(--brand-light);
+        }
+
+        body {
+            background: var(--brand-primary);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: var(--brand-primary);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--red-highlight);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: var(--red-highlight);
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: var(--brand-light);
+            font-weight: bold;
+            transition: color var(--transition-smooth);
+        }
+
+        nav a:hover {
+            color: var(--red-highlight);
+        }
+
+        .intro-section {
+            text-align: center;
+            padding: 2rem;
+            background: var(--brand-secondary);
+            color: var(--brand-light);
+            border-bottom: 2px solid var(--red-highlight);
+        }
+
+        .intro-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .intro-section p, .intro-section ul {
+            margin: 0.7rem 0;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--brand-accent);
+        }
+
+        .intro-section h3 {
+            font-size: 1.6rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--brand-light);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--highlight-color);
+            color: var(--brand-light);
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: background var(--transition-smooth);
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background: var(--red-highlight);
+        }
+
+        .features, .contact {
+            background: var(--brand-secondary);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .features h2, .contact h2 {
+            margin-bottom: 1rem;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: var(--highlight-color);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            width: 250px;
+            position: relative;
+            transition: transform var(--transition-smooth);
+            cursor: pointer;
+             /* No default border */
+             display: flex; /* Enable flex layout */
+             flex-direction: column; /* Stack icon and text */
+             align-items: center; /* Center items horizontally */
+        }
+
+        .service-card:hover {
+            /* transform: scale(1.05);  Removed scaling to prevent bounce */
+            box-shadow: 0 0 10px 5px var(--red-highlight); /* Added subtle shadow */
+             /* Border image for the snake effect */
+            border-image: repeating-linear-gradient(to right, var(--red-highlight) 0%, var(--red-highlight) 25%, transparent 25%, transparent 50%) 8px;
+            border-style: solid;
+            border-width: 8px;
+            animation: snakeMove 4s linear infinite; /* Snake animation */
+        }
+
+
+        @keyframes snakeMove {
+            0% { border-image-slice: 8; border-image-offset: 0; }
+            100% { border-image-slice: 8; border-image-offset: 8; } /* Adjust offset for speed */
+        }
+
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: var(--highlight-color);
+            border-radius: 0.5rem;
+        }
+
+        .contact label, .contact input, .contact textarea {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: var(--brand-primary);
+            text-align: center;
+            padding: 1rem 0;
+            border-top: 2px solid var(--red-highlight);
+        }
+
+        footer nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 0.5rem;
+        }
+
+        .special-card {
+            background: var(--highlight-color);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            width: 250px;
+            position: relative;
+            transition: transform var(--transition-smooth);
+            cursor: pointer;
+            border: 2px solid var(--red-highlight);
+            text-align: center;
+            display: flex; /* Enable flex layout */
+            flex-direction: column; /* Stack icon and text */
+            align-items: center; /* Center items horizontally */
+        }
+
+        .special-card h3 {
+            color: var(--red-highlight);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            margin-top: 0; /* Adjust top margin */
+        }
+
+        .special-card:hover {
+            transform: scale(1.02); /* Slightly scale special card */
+            box-shadow: 0 0 15px var(--red-highlight);
+        }
+
+        .lie-to-me-icon {
+            width: 30px;
+            height: 30px;
+            background-color: var(--red-highlight);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%); /* Upward triangle */
+            position: relative;
+            margin-bottom: 10px; /* Space between icon and text */
+        }
+
+        .lie-to-me-icon::before {
+            content: '!';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+            color: black;
+            font-weight: bold;
+        }
+
+        .service-icon {
+            font-size: 2em; /* Adjust icon size */
+            margin-bottom: 10px; /* Space below icon */
+            color: var(--red-highlight); /* Icon color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>IntelliAI Pro</h1>
+        <nav>
+            <a href="/index.html">Home</a>
+            <a href="/index.html#services">Services</a>
+            <a href="/index.html#contact">Contact</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About Us</a>
+            <a href="https://intellichatt.com" target="_blank">IntelliChatt</a>
+        </nav>
+    </header>
+
+    <section class="intro-section">
+        <h2>Supercharge Your Business with <b>IntelliAI Pro</b></h2>
+        <p>Unlock the future of your business with IntelliAI Pro, where cutting-edge AI meets bespoke business solutions. We specialize in crafting intelligent, adaptive, and efficient systems designed to propel your business to new heights. From dynamic web solutions to smart AI agents, discover how we can revolutionize your operations.</p>
+        <h3>Explore Our AI-Driven Services</h3>
+        <div style="margin-bottom: 2rem;"></div>
+        <a href="#contact" class="cta-button">Get Started Today</a>
+    </section>
+
+    <section class="features" id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <a href="/web-development.html" class="service-card">
+                <i class="service-icon">🌐</i>
+                Powered Web Development
+            </a>
+            <a href="/mobile-applications.html" class="service-card">
+                <i class="service-icon">📱</i>
+                Custom Mobile Applications
+            </a>
+            <a href="/ai-agents.html" class="service-card">
+                <i class="service-icon">🤖</i>
+                Intelligent AI Agents
+            </a>
+            <a href="/api-integrations.html" class="service-card">
+                <i class="service-icon">🔗</i>
+                API Integrations
+            </a>
+            <a href="/enterprise-solutions.html" class="service-card">
+                <i class="service-icon">🏢</i>
+                Enterprise Solutions
+            </a>
+            <a href="/small-business-options.html" class="service-card">
+                <i class="service-icon">💰</i>
+                Small Business Low Price Options
+            </a>
+             <a href="/blog.html" class="service-card">
+                <i class="service-icon">📰</i>
+                Blog
+            </a>
+            <a href="/faq.html" class="service-card">
+                <i class="service-icon">❓</i>
+                FAQ
+            </a>
+             <a href="/about.html" class="service-card">
+                <i class="service-icon">👤</i>
+                About Us
+            </a>
+            <div class="special-card" onclick="window.open('https://intellichatt.com', '_blank')">
+                <div class="lie-to-me-icon"></div>
+                <h3 style="color: var(--red-highlight);">LIE TO ME</h3>
+                <p>'IntelliAI's free deception app</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+            <button type="submit" class="cta-button">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="/index.html#services">Services</a>
+            <a href="/index.html#contact">Contact</a>
+            <a href="/blog.html">Blog</a>
+            <a href="/faq.html">FAQ</a>
+            <a href="/about.html">About Us</a>
+            <a href="https://intellichatt.com" target="_blank">IntelliChatt</a>
+        </nav>
+        <p>&copy; 2024 IntelliAI Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="37221"></script>
+</body>
+</html>
